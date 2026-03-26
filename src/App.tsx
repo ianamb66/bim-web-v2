@@ -42,6 +42,10 @@ export default function App() {
     setCurrentView("service");
   };
 
+  const whatsappUrl = `https://wa.me/525512345678?text=${encodeURIComponent(
+    "Hola, quiero agendar una sesión confidencial de diagnóstico (BIM)."
+  )}`;
+
   const isDark = theme === "dark";
 
   const bgMain = isDark ? "bg-[#050505]" : "bg-gray-50";
@@ -382,12 +386,22 @@ export default function App() {
               >
                 Servicios <ArrowDown className="w-5 h-5" />
               </a>
+
               <button
                 onClick={() => setCurrentView("contact")}
                 className="inline-flex items-center gap-2 text-sm font-bold bg-yellow-500 px-6 py-3 text-black uppercase tracking-widest hover:bg-yellow-400 transition-colors"
               >
                 Contacto <ChevronRight className="w-5 h-5" />
               </button>
+
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 text-sm font-bold bg-black text-white px-6 py-3 uppercase tracking-widest border border-black hover:bg-black/90 transition-colors"
+              >
+                WhatsApp <ChevronRight className="w-5 h-5" />
+              </a>
             </div>
           </Reveal>
         </div>
