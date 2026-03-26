@@ -322,7 +322,7 @@ export default function App() {
       >
         <NeuronBackground theme={theme} />
 
-        <div className="relative z-10 flex flex-col items-center justify-center flex-grow px-4 text-center w-full mt-8 md:mt-0">
+        <div className="relative z-10 flex flex-col items-center justify-center flex-grow px-4 text-center w-full mt-8 md:mt-0 pb-20 md:pb-0">
           <Reveal type="fade-up" delay={100}>
             <h2 className="text-sm md:text-xl font-bold tracking-[0.3em] uppercase mb-4 text-yellow-500 drop-shadow-md">
               Agencia de Marketing & Reputación
